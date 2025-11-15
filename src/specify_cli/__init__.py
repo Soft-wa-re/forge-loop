@@ -10,7 +10,7 @@
 # ]
 # ///
 """
-Specify CLI - Setup tool for Specify projects
+ForgeLoop CLI - Setup tool for ForgeLoop projects
 
 Usage:
     uvx specify-cli.py init <project-name>
@@ -229,7 +229,7 @@ BANNER = """
 ╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝        ╚═╝   
 """
 
-TAGLINE = "GitHub Spec Kit - Spec-Driven Development Toolkit"
+TAGLINE = "ForgeLoop – Spec-Driven Development Toolkit"
 class StepTracker:
     """Track and render hierarchical steps without emojis, similar to Claude Code tree output.
     Supports live auto-refresh via an attached refresh callback.
@@ -1079,7 +1079,7 @@ def init(
     console.print(f"[cyan]Selected AI assistant:[/cyan] {selected_ai}")
     console.print(f"[cyan]Selected script type:[/cyan] {selected_script}")
 
-    tracker = StepTracker("Initialize Specify Project")
+    tracker = StepTracker("Initialize ForgeLoop Project")
 
     sys._specify_tracker_active = True
 
@@ -1262,7 +1262,7 @@ def check():
 
     console.print(tracker.render())
 
-    console.print("\n[bold green]Specify CLI is ready to use![/bold green]")
+    console.print("\n[bold green]ForgeLoop CLI is ready to use![/bold green]")
 
     if not git_ok:
         console.print("[dim]Tip: Install git for repository management[/dim]")
@@ -1354,4 +1354,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
