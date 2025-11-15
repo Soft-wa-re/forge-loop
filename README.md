@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="./media/logo_small.webp" alt="ForgeLoop Logo"/>
-    <h1>🌱 ForgeLoop</h1>
+    <img src="./media/logo_small.webp" alt="Spec Kit Logo"/>
+    <h1>🌱 Spec Kit</h1>
     <h3><em>Build high-quality software faster.</em></h3>
 </div>
 
@@ -42,7 +42,7 @@ Spec-Driven Development **flips the script** on traditional software development
 
 ## ⚡ Get Started
 
-### 1. Install ForgeLoop CLI
+### 1. Install Specify CLI
 
 Choose your preferred installation method:
 
@@ -84,33 +84,33 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME
 
 ### 2. Establish project principles
 
-Launch your AI assistant in the project directory. The `/forgeloop.*` commands are available (legacy `/speckit.*` also work).
+Launch your AI assistant in the project directory. The `/speckit.*` commands are available in the assistant.
 
-Use the **`/forgeloop.constitution`** command to create your project's governing principles and development guidelines that will guide all subsequent development.
+Use the **`/speckit.constitution`** command to create your project's governing principles and development guidelines that will guide all subsequent development.
 
 ```bash
-/forgeloop.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
+/speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
 ```
 
 ### 3. Create the spec
 
-Use the **`/forgeloop.specify`** command to describe what you want to build. Focus on the **what** and **why**, not the tech stack.
+Use the **`/speckit.specify`** command to describe what you want to build. Focus on the **what** and **why**, not the tech stack.
 
 ```bash
-/forgeloop.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
+/speckit.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
 ```
 
 ### 4. Create a technical implementation plan
 
-Use the **`/forgeloop.plan`** command to provide your tech stack and architecture choices.
+Use the **`/speckit.plan`** command to provide your tech stack and architecture choices.
 
 ```bash
-/forgeloop.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
+/speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
 ```
 
 ### 5. Break down into tasks
 
-Use **`/forgeloop.tasks`** to create an actionable task list from your implementation plan.
+Use **`/speckit.tasks`** to create an actionable task list from your implementation plan.
 
 ```bash
 /speckit.tasks
@@ -121,16 +121,16 @@ Use **`/forgeloop.tasks`** to create an actionable task list from your implement
 Use **`/speckit.implement`** to execute all tasks and build your feature according to the plan.
 
 ```bash
-/forgeloop.implement
+/speckit.implement
 ```
 
 For detailed step-by-step instructions, see our [comprehensive guide](./spec-driven.md).
 
 ## 📽️ Video Overview
 
-Want to see ForgeLoop in action? Watch our [video overview](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)!
+Want to see Spec Kit in action? Watch our [video overview](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)!
 
-[![ForgeLoop video header](/media/spec-kit-video-header.jpg)](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)
+[![Spec Kit video header](/media/spec-kit-video-header.jpg)](https://www.youtube.com/watch?v=a9eR1xsfvHg&pp=0gcJCckJAYcqIYzv)
 
 ## 🤖 Supported AI Agents
 
@@ -152,7 +152,7 @@ Want to see ForgeLoop in action? Watch our [video overview](https://www.youtube.
 | [Amp](https://ampcode.com/) | ✅ | |
 | [SHAI (OVHcloud)](https://github.com/ovh/shai) | ✅ | |
 
-## 🔧 ForgeLoop CLI Reference
+## 🔧 Specify CLI Reference
 
 The `specify` command supports the following options:
 
@@ -160,7 +160,7 @@ The `specify` command supports the following options:
 
 | Command     | Description                                                    |
 |-------------|----------------------------------------------------------------|
-| `init`      | Initialize a new ForgeLoop project from the latest template      |
+| `init`      | Initialize a new Specify project from the latest template      |
 | `check`     | Check for installed tools (`git`, `claude`, `gemini`, `code`/`code-insiders`, `cursor-agent`, `windsurf`, `qwen`, `opencode`, `codex`, `shai`) |
 
 ### `specify init` Arguments & Options
@@ -235,11 +235,11 @@ Essential commands for the Spec-Driven Development workflow:
 
 | Command                  | Description                                                           |
 |--------------------------|-----------------------------------------------------------------------|
-| `/forgeloop.constitution`  | Create or update project governing principles and development guidelines |
-| `/forgeloop.specify`       | Define what you want to build (requirements and user stories)        |
-| `/forgeloop.plan`          | Create technical implementation plans with your chosen tech stack     |
-| `/forgeloop.tasks`         | Generate actionable task lists for implementation                     |
-| `/forgeloop.implement`     | Execute all tasks to build the feature according to the plan         |
+| `/speckit.constitution`  | Create or update project governing principles and development guidelines |
+| `/speckit.specify`       | Define what you want to build (requirements and user stories)        |
+| `/speckit.plan`          | Create technical implementation plans with your chosen tech stack     |
+| `/speckit.tasks`         | Generate actionable task lists for implementation                     |
+| `/speckit.implement`     | Execute all tasks to build the feature according to the plan         |
 
 #### Optional Commands
 
@@ -247,15 +247,15 @@ Additional commands for enhanced quality and validation:
 
 | Command              | Description                                                           |
 |----------------------|-----------------------------------------------------------------------|
-| `/forgeloop.clarify`   | Clarify underspecified areas (recommended before `/forgeloop.plan`; formerly `/quizme`) |
-| `/forgeloop.analyze`   | Cross-artifact consistency & coverage analysis (run after `/forgeloop.tasks`, before `/forgeloop.implement`) |
-| `/forgeloop.checklist` | Generate custom quality checklists that validate requirements completeness, clarity, and consistency (like "unit tests for English") |
+| `/speckit.clarify`   | Clarify underspecified areas (recommended before `/speckit.plan`; formerly `/quizme`) |
+| `/speckit.analyze`   | Cross-artifact consistency & coverage analysis (run after `/speckit.tasks`, before `/speckit.implement`) |
+| `/speckit.checklist` | Generate custom quality checklists that validate requirements completeness, clarity, and consistency (like "unit tests for English") |
 
 ### Environment Variables
 
 | Variable         | Description                                                                                    |
 |------------------|------------------------------------------------------------------------------------------------|
-| `SPECIFY_FEATURE` | Override feature detection for non-Git repositories. Set to the feature directory name (e.g., `001-photo-albums`) to work on a specific feature when not using Git branches.<br/>**Must be set in the context of the agent you're working with prior to using `/forgeloop.plan` or follow-up commands. |
+| `SPECIFY_FEATURE` | Override feature detection for non-Git repositories. Set to the feature directory name (e.g., `001-photo-albums`) to work on a specific feature when not using Git branches.<br/>**Must be set in the context of the agent you're working with prior to using `/speckit.plan` or follow-up commands. |
 
 ## 📚 Core Philosophy
 
@@ -322,7 +322,7 @@ If you encounter issues with an agent, please open an issue so we can refine the
 <details>
 <summary>Click to expand the detailed step-by-step walkthrough</summary>
 
-You can use the ForgeLoop CLI to bootstrap your project, which will bring in the required artifacts in your environment. Run:
+You can use the Specify CLI to bootstrap your project, which will bring in the required artifacts in your environment. Run:
 
 ```bash
 specify init <project_name>
@@ -340,7 +340,7 @@ specify init . --force
 specify init --here --force
 ```
 
-![ForgeLoop CLI bootstrapping a new project in the terminal](./media/specify_cli.gif)
+![Specify CLI bootstrapping a new project in the terminal](./media/specify_cli.gif)
 
 You will be prompted to select the AI agent you are using. You can also proactively specify it directly in the terminal:
 
@@ -376,12 +376,12 @@ Go to the project folder and run your AI agent. In our example, we're using `cla
 
 ![Bootstrapping Claude Code environment](./media/bootstrap-claude-code.gif)
 
-You will know that things are configured correctly if you see the `/forgeloop.constitution`, `/forgeloop.specify`, `/forgeloop.plan`, `/forgeloop.tasks`, and `/forgeloop.implement` commands available.
+You will know that things are configured correctly if you see the `/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, and `/speckit.implement` commands available.
 
-The first step should be establishing your project's governing principles using the `/forgeloop.constitution` command. This helps ensure consistent decision-making throughout all subsequent development phases:
+The first step should be establishing your project's governing principles using the `/speckit.constitution` command. This helps ensure consistent decision-making throughout all subsequent development phases:
 
 ```text
-/forgeloop.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
+/speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements. Include governance for how these principles should guide technical decisions and implementation choices.
 ```
 
 This step creates or updates the `.specify/memory/constitution.md` file with your project's foundational guidelines that the AI agent will reference during specification, planning, and implementation phases.
