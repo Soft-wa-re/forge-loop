@@ -14,7 +14,9 @@ ONLY_STEP=""
 DRY_RUN=0
 SCRIPT_VARIANT="${SCRIPT_VARIANT:-sh}"
 
-REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Always treat project root as two directories up from this script
+_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$_SCRIPT_DIR/../.." && pwd)"
 LOG_DIR="$REPO_ROOT/.forgeloop/logs"
 mkdir -p "$LOG_DIR"
 
@@ -140,4 +142,3 @@ main() {
 }
 
 main "$@"
-
