@@ -16,35 +16,35 @@ VERSION="$1"
 VERSION_NO_V=${VERSION#v}
 
 gh release create "$VERSION" \
-  .genreleases/spec-kit-template-copilot-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-copilot-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-claude-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-claude-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-gemini-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-gemini-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-cursor-agent-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-cursor-agent-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-opencode-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-opencode-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-qwen-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-qwen-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-windsurf-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-windsurf-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-codex-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-codex-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-kilocode-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-kilocode-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-auggie-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-auggie-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-roo-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-roo-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-codebuddy-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-codebuddy-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-amp-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-amp-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-shai-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-shai-ps-"$VERSION".zip \
-  .genreleases/spec-kit-template-q-sh-"$VERSION".zip \
-  .genreleases/spec-kit-template-q-ps-"$VERSION".zip \
-  --title "Spec Kit Templates - $VERSION_NO_V" \
+  .genreleases/forge-loop-template-copilot-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-copilot-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-claude-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-claude-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-gemini-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-gemini-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-cursor-agent-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-cursor-agent-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-opencode-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-opencode-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-qwen-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-qwen-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-windsurf-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-windsurf-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-codex-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-codex-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-kilocode-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-kilocode-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-auggie-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-auggie-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-roo-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-roo-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-codebuddy-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-codebuddy-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-amp-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-amp-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-shai-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-shai-ps-"$VERSION".zip \
+  .genreleases/forge-loop-template-q-sh-"$VERSION".zip \
+  .genreleases/forge-loop-template-q-ps-"$VERSION".zip \
+  --title "ForgeLoop Templates - $VERSION_NO_V" \
   --notes-file release_notes.md
