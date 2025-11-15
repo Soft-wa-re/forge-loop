@@ -1,42 +1,56 @@
 # ForgeLoop Rebrand Plan (Demo-Focused)
 
-Goal: For an imminent demo, minimize risk and time while ensuring screenshots and common user flows show ForgeLoop branding. Prioritize low-risk, necessary changes; defer high-risk or unnecessary work.
+Goal: For the imminent demo, minimize risk and time while ensuring screenshots and common user flows show ForgeLoop branding. Track status and quality as we go.
 
-## Low Risk & Necessary Changes
-- Update visible names in prompt/command templates:
-  - Rename `/speckit.*` command names in template filenames and front‑matter to `/forgeloop.*` where filenames are user-visible in screenshots.
-  - Ensure descriptions and headers say “ForgeLoop”.
-- Update top-level docs branding where screenshots are likely taken:
-  - README title/logo alt text and first paragraph to “ForgeLoop”.
-  - docs/quickstart.md headings and first usage examples (keep legacy notes minimal).
-- Update user-facing strings in CLI only where shown in screenshots or obvious outputs:
-  - Banners, taglines, success messages: “Specify/Spec Kit” → “ForgeLoop”.
-  - Keep internal module/package name `specify_cli` to avoid risk.
-- Add CLI alias without breaking existing usage:
-  - Provide `forgeloop` (or `forge`) as an additional console script mapping to the same entrypoint. Keep `specify` working.
-- Non-code assets:
-  - Swap logo alt text to ForgeLoop; keep file names as-is if changing files is risky.
-- Versioning housekeeping (required by AGENTS.md):
-  - If `src/specify_cli/__init__.py` is touched, bump version in `pyproject.toml` and add a brief CHANGELOG entry.
+## 1) Necessary / Low-Risk Changes
+- Templates and prompts
+  - Replace visible `/speckit.*` with `/forgeloop.*` in command templates and notes.
+  - Keep legacy references where needed for continuity.
+- Docs top-level branding
+  - README title/logo alt, first paragraphs to “ForgeLoop”.
+  - docs/quickstart.md headings and first examples.
+- CLI visible text only
+  - Banner/tagline, success messages switch to “ForgeLoop”.
+  - Keep package/module `specify_cli`, behavior, and entrypoint the same.
+- Non-code assets
+  - Update alt text to ForgeLoop; avoid renaming files right now.
+- Versioning rule (AGENTS.md)
+  - If `src/specify_cli/__init__.py` is modified, bump version and add CHANGELOG.
 
-## High Risk & Unnecessary Changes (Defer)
-- Renaming Python package/module (`specify_cli` → `forgeloop_cli`).
-- Changing repository names/URLs or automation that depends on `spec-kit` identifiers.
-- Overhauling release artifacts and workflow scripts (`spec-kit-template-*` → `forge-loop-*`).
-- Removing legacy `/speckit.*` commands; deep refactors of templates/scripts.
-- Widespread internal identifier renames not visible in demo outputs.
+Status: Completed in repo for templates, README top, quickstart, and key CLI messages. Version bump pending (alias decision impacts this).
 
-## Concrete Next Steps (Demo Sprint)
-1) Template filenames and fronts:
-   - `templates/commands/*` → ensure command names present as `/forgeloop.*` in visible text; keep legacy references if needed but prefer ForgeLoop.
-2) Update limited CLI messaging:
-   - In `src/specify_cli/__init__.py`, change `TAGLINE`, banners, and “Specify” labels to “ForgeLoop”. Avoid altering behavior.
-3) Docs touch‑up for screenshot areas:
-   - `README.md` top block; `docs/quickstart.md` first examples.
-4) Add CLI alias (if packaging used in demo):
-   - Expose `forgeloop` entrypoint alongside `specify` (requires `pyproject.toml` console_scripts change).
-5) Comply with versioning rules:
-   - Bump version; add `CHANGELOG.md` entry.
+Quality check
+- Grep shows updated strings in affected files.
+- CLI runs with same entrypoint; only messages changed.
 
-Notes:
-- Keep all legacy names operational. This is a cosmetic/UX pass for demo readiness.
+## 2) High/Medium Value for Screenshots (Optional before demo)
+- Add CLI alias `forgeloop` (or `forge`) in pyproject while retaining `specify`.
+- Update GIF captions and headings where visible in screenshots.
+- Prefer `/forgeloop.*` in tables/lists where users scan quickly; mention legacy once.
+
+Risk: Low to medium (requires version bump and CHANGELOG for alias). Impact: Improves screenshot/story consistency.
+
+Status: Pending decision on alias name.
+
+Quality check
+- After alias: verify `uv tool install specify-cli --from <repo>` still exposes `specify` and new alias.
+- Smoke test `init` path prints ForgeLoop messaging.
+
+## 3) Deep Code Changes (Defer post-demo)
+- Rename Python package/module to `forgeloop_cli` with a shim for `specify_cli`.
+- Change release artifacts and workflow identifiers from `spec-kit*` to `forge-loop*`.
+- Update AGENTS.md comprehensive branding and script examples.
+- Migrate repo names/URLs and all cross-links.
+
+Status: Not started (intentionally deferred).
+
+Quality check
+- Plan phased migration with deprecation notices and redirects.
+
+## Concrete Next Steps (Sprint)
+1) Decide CLI alias: `forgeloop` or `forge`.
+2) If approved, add alias to pyproject, bump version, add CHANGELOG entry.
+3) Spot-check remaining docs sections for screenshot-critical branding.
+
+Notes
+- Legacy names remain operational; this is a cosmetic/UX pass for demo readiness.
