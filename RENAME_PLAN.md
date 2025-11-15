@@ -17,7 +17,7 @@ Goal: For the imminent demo, minimize risk and time while ensuring screenshots a
 - Versioning rule (AGENTS.md)
   - If `src/specify_cli/__init__.py` is modified, bump version and add CHANGELOG.
 
-Status: Completed in repo for templates, README top, quickstart, and key CLI messages. Version bump pending (alias decision impacts this).
+Status: Resetting. We will revert the repo to pre-change state and re-apply this tier cleanly. No back-compat messaging (no speckit mentions like “also works”).
 
 Quality check
 - Grep shows updated strings in affected files.
@@ -30,14 +30,14 @@ Quality check
 
 Risk: Low to medium (requires version bump and CHANGELOG for alias). Impact: Improves screenshot/story consistency.
 
-Status: Pending decision on alias name.
+Status: Will add only the new `forgeloop` CLI and package naming in the fresh pass. No legacy aliases.
 
 Quality check
 - After alias: verify `uv tool install specify-cli --from <repo>` still exposes `specify` and new alias.
 - Smoke test `init` path prints ForgeLoop messaging.
 
-## 3) Deep Code Changes (Defer post-demo)
-- Rename Python package/module to `forgeloop_cli` with a shim for `specify_cli`.
+## 3) Deep Code Changes (Post-reset execution)
+- Rename Python package/module to `forgeloop_cli` (no shim, no legacy aliases).
 - Change release artifacts and workflow identifiers from `spec-kit*` to `forge-loop*`.
 - Update AGENTS.md comprehensive branding and script examples.
 - Migrate repo names/URLs and all cross-links.
@@ -48,9 +48,10 @@ Quality check
 - Plan phased migration with deprecation notices and redirects.
 
 ## Concrete Next Steps (Sprint)
-1) Decide CLI alias: `forgeloop` or `forge`.
-2) If approved, add alias to pyproject, bump version, add CHANGELOG entry.
-3) Spot-check remaining docs sections for screenshot-critical branding.
+1) Wipe current code changes (maintainer action).
+2) Re-apply Tier 1 changes cleanly without legacy/back-compat notes.
+3) Execute Tier 2: adopt `forgeloop` as sole CLI/package; bump version.
+4) Execute Tier 3: port full CLI under new package; update artifacts and docs.
 
 Notes
 - Legacy names remain operational; this is a cosmetic/UX pass for demo readiness.
