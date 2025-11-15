@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="./media/logo_small.webp" alt="Spec Kit Logo"/>
-    <h1>🌱 Spec Kit</h1>
+    <img src="./media/logo_small.webp" alt="ForgeLoop Logo"/>
+    <h1>🌱 ForgeLoop</h1>
     <h3><em>Build high-quality software faster.</em></h3>
 </div>
 
