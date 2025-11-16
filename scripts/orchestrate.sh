@@ -71,7 +71,7 @@ done
 [[ -z "$ONLY_STEP" || $(is_valid_step "$ONLY_STEP"; echo $?) -eq 0 ]] || { err "--only must be one of: ${ALL_STEPS[*]}"; exit 1; }
 [[ -z "$FROM_STEP" || -z "$ONLY_STEP" ]] || { err "Use either --from or --only, not both"; exit 1; }
 
-feature_dir="$REPO_ROOT/$FEATURE"
+feature_dir="$REPO_ROOT/specs/$FEATURE"
 [[ -d "$feature_dir" ]] || { err "Feature directory not found: $feature_dir"; exit 1; }
 [[ -s "$REPO_ROOT/.forgeloop/memory/constitution.md" ]] || warn "No constitution found at .forgeloop/memory/constitution.md"
 [[ -s "$feature_dir/spec.md" ]] || warn "No spec.md found in $FEATURE (continuing as requested)"

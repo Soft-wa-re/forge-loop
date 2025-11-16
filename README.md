@@ -42,7 +42,7 @@ Spec-Driven Development **flips the script** on traditional software development
 
 ## ⚡ Get Started
 
-### 1. Install Specify CLI
+### 1. Install ForgeLoop CLI
 
 Choose your preferred installation method:
 
@@ -51,20 +51,20 @@ Choose your preferred installation method:
 Install once and use everywhere:
 
 ```bash
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+uv tool install forgeloop-cli --from git+https://github.com/Soft-wa-re/forge-loop.git
 ```
 
 Then use the tool directly:
 
 ```bash
-specify init <PROJECT_NAME>
-specify check
+forgeloop init <PROJECT_NAME>
+forgeloop check
 ```
 
 To upgrade Specify, see the [Upgrade Guide](./docs/upgrade.md) for detailed instructions. Quick upgrade:
 
 ```bash
-uv tool install specify-cli --force --from git+https://github.com/github/spec-kit.git
+uv tool install forgeloop-cli --force --from git+https://github.com/Soft-wa-re/forge-loop.git
 ```
 
 #### Option 2: One-time Usage
@@ -72,7 +72,7 @@ uv tool install specify-cli --force --from git+https://github.com/github/spec-ki
 Run directly without installing:
 
 ```bash
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
+uvx --from git+https://github.com/Soft-wa-re/forge-loop.git forgeloop init <PROJECT_NAME>
 ```
 
 **Benefits of persistent installation:**
@@ -84,9 +84,9 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME
 
 ### 2. Establish project principles
 
-Launch your AI assistant in the project directory. The `/speckit.*` commands are available in the assistant.
+Launch your AI assistant in the project directory. The `/forgeloop.*` commands are available in the assistant.
 
-Use the **`/speckit.constitution`** command to create your project's governing principles and development guidelines that will guide all subsequent development.
+Use the **`/forgeloop.constitution`** command to create your project's governing principles and development guidelines that will guide all subsequent development.
 
 ```bash
 /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
@@ -94,7 +94,7 @@ Use the **`/speckit.constitution`** command to create your project's governing p
 
 ### 3. Create the spec
 
-Use the **`/speckit.specify`** command to describe what you want to build. Focus on the **what** and **why**, not the tech stack.
+Use the **`/forgeloop.specify`** command to describe what you want to build. Focus on the **what** and **why**, not the tech stack.
 
 ```bash
 /speckit.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
@@ -102,7 +102,7 @@ Use the **`/speckit.specify`** command to describe what you want to build. Focus
 
 ### 4. Create a technical implementation plan
 
-Use the **`/speckit.plan`** command to provide your tech stack and architecture choices.
+Use the **`/forgeloop.plan`** command to provide your tech stack and architecture choices.
 
 ```bash
 /speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
@@ -110,7 +110,7 @@ Use the **`/speckit.plan`** command to provide your tech stack and architecture 
 
 ### 5. Break down into tasks
 
-Use **`/speckit.tasks`** to create an actionable task list from your implementation plan.
+Use **`/forgeloop.tasks`** to create an actionable task list from your implementation plan.
 
 ```bash
 /speckit.tasks
