@@ -106,7 +106,7 @@ generate_copilot_prompts() {
   mkdir -p "$prompts_dir"
   
   # Generate a .prompt.md file for each .agent.md file
-  for agent_file in "$agents_dir"/speckit.*.agent.md; do
+  for agent_file in "$agents_dir"/forgeloop.*.agent.md; do
     [[ -f "$agent_file" ]] || continue
     
     local basename=$(basename "$agent_file" .agent.md)
